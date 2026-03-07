@@ -65,9 +65,64 @@
     align-items: center;
     display: flex;
 
-    & input {
-      border: none;
-      outline: none;
+    & img {
+        margin-left: auto;
+      }
+
+    
+    & label {
+      align-items: center;
+      display: flex;
+      gap: 0.75rem;
+      
+      & p {
+        font: var(--paragraph);
+        color: var(--content-secondary);
+      }
+
+      & input {
+        position: absolute;
+        opacity: 0;
+      }
+
+      .checkbox {
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid var(--border-primary);
+        border-radius: .3rem;
+        position: relative;
+      }
+
+      & input:hover + .checkbox {
+        border: 1px solid var(--border-hover);
+      }
+
+      & input:checked + .checkbox {
+        background-color: var(--color-brand);
+        border: none;
+      }
+      
+      & input:checked + .checkbox::after {
+        content: "";
+        position: absolute;
+
+        width: 12px;
+        height: 12px;
+
+        background-image: url("../assets/icons/check.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+      }
+
+
     }
+
+
   }
 }

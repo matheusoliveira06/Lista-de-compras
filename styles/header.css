@@ -15,6 +15,6 @@ header {
   body > img:nth-child(1) {
     display: flex;
     margin: auto;
-    padding-block: 1.5rem 3.875rem;
+    padding-top: 1.5rem;
   }
 }
