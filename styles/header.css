@@ -1,0 +1,20 @@
+header {
+  padding-top: 4rem;
+  padding-bottom: 2.75rem;  
+
+  & img {
+    padding-bottom: 1rem;
+  }
+  & h1 {
+    font: var(--title);
+  }
+}
+
+@media (width >= 80em) {
+
+  body > img:nth-child(1) {
+    display: flex;
+    margin: auto;
+    padding-block: 1.5rem 3.875rem;
+  }
+}
