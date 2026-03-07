@@ -39,11 +39,35 @@
 }
 
 @media (width >= 80em) {
-  
+
   .add-item {
     display: grid;
     grid-auto-flow: column;
     grid-template-columns: 3fr 1fr;
     
+  }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  margin-block: 2.375rem;
+  gap: .75rem;
+
+  list-style: none;
+
+  & .card {
+    /* border: 2px solid black; */
+    padding: .75rem;
+    background-color: var(--background-secondary);
+    border-radius: .75rem;
+    align-items: center;
+    display: flex;
+
+    & input {
+      border: none;
+      outline: none;
+    }
   }
 }
