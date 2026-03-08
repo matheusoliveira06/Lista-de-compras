@@ -28,7 +28,7 @@ botoesRemover.forEach(function(botao) {
     // esconde depois de 3 segundos
     setTimeout(function() {
       alerta.style.display = "none"
-    }, 3000)
+    }, 2000)
 
   })
 })
