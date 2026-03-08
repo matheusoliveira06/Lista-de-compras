@@ -65,9 +65,13 @@
     align-items: center;
     display: flex;
 
-    & img {
-        margin-left: auto;
-      }
+    & .remove {
+      margin-left: auto;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
 
     
     & label {
@@ -124,5 +128,29 @@
     }
 
 
+  }
+}
+
+.alert {
+  background-color: var(--color-danger);
+  border-radius: .75rem;
+  padding: .8rem;
+  display: none;
+  align-items: center;
+  gap: .5rem;
+
+  & span {
+    font: var(--label);
+    color: var(--always-white);
+  }
+
+  & .mensagem {
+    margin-left: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
   }
 }

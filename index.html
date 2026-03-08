@@ -11,6 +11,7 @@
   <title>Lista de compras</title>
 
   <link rel="stylesheet" href="styles/index.css">
+  
 </head>
 <body>
   <img class="desktop-only" src="assets/images/logo.png" alt="Logo Quicklist">
@@ -32,7 +33,9 @@
           <span class="checkbox"></span>
           <p>Pão de forma</p>
         </label>
-        <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        <button class="remove">
+          <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        </button>
       </li>
 
       <li class="card">
@@ -41,7 +44,9 @@
           <span class="checkbox"></span>
           <p>Café preto</p>
         </label>
-        <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        <button class="remove">
+          <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        </button>
       </li>
 
       <li class="card">
@@ -50,7 +55,9 @@
           <span class="checkbox"></span>
           <p>Suco de laranja</p>
         </label>
-        <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        <button class="remove">
+          <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        </button>
       </li>
 
       <li class="card">
@@ -59,10 +66,21 @@
           <span class="checkbox"></span>
           <p>Bolacha</p>
         </label>
-        <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        <button class="remove">
+          <img src="assets/icons/lixeira.svg" alt="Icon lixeira">
+        </button>
       </li>
     </ul>
   </form>
 
+  <div class="alert container">
+    <img src="assets/icons/warning-circle-filled.svg" alt="">
+    <span>O item foi removido da lista</span>
+    <button class="mensagem">
+      <img src="assets/icons/delete-small.svg" alt="Fechar mensagem">
+    </button>
+  </div>
+
+<script src="scripts.js"></script>
 </body>
 </html>
