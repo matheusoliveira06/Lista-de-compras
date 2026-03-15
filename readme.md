@@ -1,0 +1,1 @@
+![Descrição da imagem](./assets/images/Captura%20de%20tela%202026-03-15%20174958.png)
